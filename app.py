@@ -27,7 +27,7 @@ def call():
 	return call.sid
 
 if __name__ == "__main__":
-# 	call()
+	call()
 	print("call is in progress")
 	port = int(os.environ.get("PORT", 8080))
 	app.run(host='0.0.0.0', port=port)
