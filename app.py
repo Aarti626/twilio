@@ -21,13 +21,13 @@ def call():
 	call = client.calls.create(
 						url='https://demo.twilio.com/welcome/voice/',
 						to='+919770445436',
-						from_='+919642851210'
+						from_='+18446523945'
 					)
 	print(call.sid)
 	return call.sid
 
 if __name__ == "__main__":
-	call()
+# 	call()
 	print("call is in progress")
 	port = int(os.environ.get("PORT", 8080))
 	app.run(host='0.0.0.0', port=port)
